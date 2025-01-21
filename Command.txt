@@ -1,0 +1,34 @@
+# Install Python and pip 
+sudo apt-get update
+
+sudo apt-get install python3-distutils
+
+sudo apt-get install python3-apt
+
+sudo apt-get install wget
+
+wget https://bootstrap.pypa.io/get-pip.py
+
+sudo python3 get-pip.py
+
+#Create an venv environment
+python3 -m venv mage-ai-env
+source mage-ai-env/bin/activate
+
+# Install Pandas
+sudo pip3 install pandas
+
+# Install Google Cloud Library
+sudo pip3 install google-cloud
+
+sudo pip3 install google-cloud-bigquery
+
+# Install Mage
+sudo pip3 install mage-ai
+
+# Start Mage
+mage start uberproject
+
+# stope environment
+
+deactivate
